@@ -1,0 +1,9 @@
+[project]
+name = "melvin-bot"
+version = "0.1.0"
+description = "Melvin-Bot is the never resting worker of La Logia."
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "discord-py>=2.4.0",
+]
