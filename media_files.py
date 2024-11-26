@@ -61,7 +61,24 @@ imagenes_starboard = (
     ("Sciarpa famoso", "https://media.discordapp.net/attachments/1186763825005994036/1216912672470077440/IMG_20240220_171518_067.png?ex=66021d3e&is=65efa83e&hm=0b642875877f5901ded938b5958681ef5f147ac32db325ae83876f74ec028bbd&"),
     ("Wea god", "https://cdn.discordapp.com/attachments/1186763825005994036/1216913743238135869/image.png?ex=66021e3d&is=65efa93d&hm=d644ac1e56166d90dba4bd3e9f9e7232c7ce126abec36844976643c58280c31a&"),
     ("Lo es", "https://media.discordapp.net/attachments/1186763825005994036/1216914178737176628/image.png?ex=66021ea5&is=65efa9a5&hm=eb0c45e7e58ce4aa07cbde52cd39b41c11f674ac47fb7c7956e0253e9634dc42&"),
-    ("Sciarpa consejero", "https://cdn.discordapp.com/attachments/1186763825005994036/1216914588726067313/image.png?ex=66021f07&is=65efaa07&hm=e6a320255f54636250a4f57de58603cc737ad0229403382e5856af770df501c9&")
+    ("Sciarpa consejero", "https://cdn.discordapp.com/attachments/1186763825005994036/1216914588726067313/image.png?ex=66021f07&is=65efaa07&hm=e6a320255f54636250a4f57de58603cc737ad0229403382e5856af770df501c9&"),
+    ("Kiki", "https://media.discordapp.net/attachments/1186763825005994036/1186771137363980469/20231004_085649.png?ex=67463340&is=6744e1c0&hm=8e9df97413f53e4a21271360df09faea29622e62013740206c65c3cd2391ca0a&"),
+    ("La traición", "https://media.discordapp.net/attachments/1020776041851129923/1222633480945664130/image.png?ex=67462629&is=6744d4a9&hm=5ece7452701936173cb7b16772afb3a28ceccfb619db384808371adf51a19483&format=webp&quality=lossless&"),
+    ("Uh...", "https://media.discordapp.net/attachments/1020776041851129923/1224892845174030386/198_sin_titulo_20240402222636.png?ex=6746755b&is=674523db&hm=d30511276e295b94c23b24a913dbf6946bbb4b503d0490461a85c38ed9820579&format=webp&quality=lossless&"),
+    ("Turrón cosas", "https://cdn.discordapp.com/attachments/1186763825005994036/1310797771913035776/image.png?ex=6746870e&is=6745358e&hm=a46b11f7af63962ab61a1bc90af141f5706b67db174a4e98fd069013b2a95210&"),
+    ("A 9 personas les gusta esto", "https://media.discordapp.net/attachments/1186763825005994036/1310798283618255011/image.png?ex=67468788&is=67453608&hm=fc294007a8e633ec13c3e39d3152efd0d53fc8a0b54adc66a77239b3327a7db4&=&format=webp&quality=lossless&width=249&height=195"),
+    ("Leakearon al Kitt", "https://media.discordapp.net/attachments/1186763825005994036/1310798734577373216/image.png?ex=674687f3&is=67453673&hm=db124955634160ddd02bdddc35684d265d79efb987b29dac366fdefd140d305a&=&format=webp&quality=lossless&width=720&height=544"),
+    ("Leakearon a la Turrón", "https://cdn.discordapp.com/attachments/1186763825005994036/1310799290293026816/image.png?ex=67468878&is=674536f8&hm=87c64fa87b0b0de08d353f750c5f4a983241757f67cabd91a7734ff29361c7f1&"),
+    ("No me corromperán", "https://cdn.discordapp.com/attachments/1186763825005994036/1310799871921619037/image.png?ex=67468902&is=67453782&hm=56029159dfa678d90202ce0be0d05566b06a3d014c3bd3ea0942e048400291d0&"),
+    ("Ya es costumbre", "https://cdn.discordapp.com/attachments/1186763825005994036/1310800391541227621/image.png?ex=6746897e&is=674537fe&hm=806b377ba29cfb476abcbb885c014964c4e5a4b716a4291095551444219a9649&"),
+    ("El orden natural del Chis", "https://media.discordapp.net/attachments/1186763825005994036/1310800819565629510/image.png?ex=674689e4&is=67453864&hm=536bda126c97b23fe962d17625f17782a5b3db80d71edc1224d2f7f3aeff9b7b&=&format=webp&quality=lossless&width=499&height=148"),
+    ("Demostrado", "https://media.discordapp.net/attachments/1186763825005994036/1310801097937522688/image.png?ex=67468a27&is=674538a7&hm=f5d92c6155c2d488329f848f76160cc370e0b9770b7711226f48b99feccf48c3&=&format=webp&quality=lossless&width=650&height=174"),
+    ("Criminal internacional", "https://cdn.discordapp.com/attachments/1186763825005994036/1310801345736998943/image.png?ex=67468a62&is=674538e2&hm=ac2d451be534142c1cd19a27486eb336f5fbd8bf5455db88af6c63596bb7c6c6&"),
+    ("Mewlvin", "https://cdn.discordapp.com/attachments/1186763825005994036/1310802008705597501/image.png?ex=67468b00&is=67453980&hm=eb97eaa118be044ea4d1e908e585dc469100a0dd7b1bcb28a72b2031550cb928&"),
+    ("Alon brainrot", "https://cdn.discordapp.com/attachments/1186763825005994036/1310802337849282671/image.png?ex=67468b4e&is=674539ce&hm=a83fa50b1a7d96d8c6bc3af601926229fe9dcb31a77b0d8d744813bfba04d9b7&"),
+    ("Y guitarra también", "https://cdn.discordapp.com/attachments/1186763825005994036/1310803043188478044/image.png?ex=67468bf7&is=67453a77&hm=66dcdb3746355aedadcd8cd88512a1c4e7febf49e74c0c6be462b3c19dc958d6&"),
+    ("Logia potencia mundial", "https://cdn.discordapp.com/attachments/1186763825005994036/1310803936655179807/image.png?ex=67468ccc&is=67453b4c&hm=b33395f53e645008123ae1e91dc135791ce7e0ab909df49b4a90af06aa4c052c&"),
+    ("Verdadero macho", "https://cdn.discordapp.com/attachments/1186763825005994036/1310804507432583168/image.png?ex=67468d54&is=67453bd4&hm=1162a2ab75a9872b2cc3e0fd88505b2415b1cddc155499db62eb73cafe8e1245&"),
     )
 
 answers = (
