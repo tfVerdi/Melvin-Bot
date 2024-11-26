@@ -39,7 +39,7 @@ async def channel_allowed(ctx):
 async def on_ready():
     logger.info(f"User: {client.user}; User ID: {client.user.id}")
     print("MelvinBot is LIVE ON AIR!")
-    await client.get_channel(1180314714123817171).send("VIVO")
+    await client.get_channel(logia_chat_general_id).send("VIVO")
 
 # ----------------AUDIT LOGS-------------------
 
@@ -93,7 +93,7 @@ async def on_message_delete(message):
 @client.command()
 @commands.check(is_verdi)
 async def die(ctx):
-    await client.get_channel(1180314714123817171).send(f'Muelto :c ||MelvinBot estuvo funcionando por {int((time.time()-startTime)/60)} minutos.||')
+    await client.get_channel(logia_mbot_staff_channel_id).send(f'Muelto :c ||MelvinBot estuvo funcionando por {int((time.time()-startTime)/60)} minutos.||')
     print("Bot stopped by DIE")
     sys.exit()
 @die.error
