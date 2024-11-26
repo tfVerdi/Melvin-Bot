@@ -79,6 +79,7 @@ imagenes_starboard = (
     ("Y guitarra también", "https://cdn.discordapp.com/attachments/1186763825005994036/1310803043188478044/image.png?ex=67468bf7&is=67453a77&hm=66dcdb3746355aedadcd8cd88512a1c4e7febf49e74c0c6be462b3c19dc958d6&"),
     ("Logia potencia mundial", "https://cdn.discordapp.com/attachments/1186763825005994036/1310803936655179807/image.png?ex=67468ccc&is=67453b4c&hm=b33395f53e645008123ae1e91dc135791ce7e0ab909df49b4a90af06aa4c052c&"),
     ("Verdadero macho", "https://cdn.discordapp.com/attachments/1186763825005994036/1310804507432583168/image.png?ex=67468d54&is=67453bd4&hm=1162a2ab75a9872b2cc3e0fd88505b2415b1cddc155499db62eb73cafe8e1245&"),
+    ("Por favor", "https://cdn.discordapp.com/attachments/1186763825005994036/1310817898884759702/image.png?ex=674699cc&is=6745484c&hm=5f316aaa6129c24b0cbc3389dc16efcd551da188166c070717f29e7227f359e3&")
     )
 
 answers = (
