@@ -224,6 +224,11 @@ async def oiemelvin(ctx):
 async def thread(ctx):
     await ctx.send(media.im_thread_inquiry)
 
+@client.command()
+@commands.check(channel_allowed)
+async def bomdia(ctx):
+    await ctx.send(media.vid_bomdia)
+
 # ----------------------MODERATING----------------------------
 
 @client.command()

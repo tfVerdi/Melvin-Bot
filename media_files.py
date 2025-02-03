@@ -137,6 +137,7 @@ Comandos recreacionales:
 - _oiemelvin [pregunta]
 - _melvinseal  [MICK EXCLUSIVE]
 - _thread
+- _bomdia
 
 Comandos moderación:
 - _ban [@usuario] [motivo]
@@ -161,7 +162,8 @@ im_pirate = "https://cdn.discordapp.com/attachments/1179960160828018750/11803279
 im_completo = "https://cdn.discordapp.com/attachments/1020780174310121613/1180275900839886879/l7bz4h21a7z71.jpg?ex=657cd497&is=656a5f97&hm=1dde1c331cdccbb69aa371d799fc31c4c211a89a4d4aa4d5f534f98a16948304&"
 
 # Generic Videos
-vid_chacarron = "https://youtu.be/y75MGw5pcyc?si=KSHRklVr_C8ljW0C&t=14"
+vid_chacarron = "https://youtu.be/y75MGw5pcyc&t=14"
+vid_bomdia = "https://youtu.be/PxxtBZZXWGc"
 
 # Logia Images
 logiaIM_erronea = "https://cdn.discordapp.com/attachments/1179960160828018750/1186778931861393549/image.png?ex=65947d02&is=65820802&hm=9a09a5a46dc585163ce85013c4f8f91a0a8452cb12b7e0e466d08c2cd9f75122&"
