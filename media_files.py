@@ -2,6 +2,8 @@ from random import randint
 
 def getRandom(iterable: list|tuple|str):
     return iterable[randint(0, len(iterable)-1)]
+def getRandomInt(max: int = 10):
+    return randint(0, max)
 
 imagenes_durisimas = (
     "https://media.discordapp.net/attachments/1180299519355789423/1180299527756988507/IMG_0011.png?ex=657cea98&is=656a7598&hm=dbc5ccb63408e42b98c932c989f7f8be6a670eef1dd03243169862850093c111&=&format=webp&quality=lossless&width=706&height=670",
@@ -42,7 +44,7 @@ imagenes_durisimas = (
     "https://cdn.discordapp.com/attachments/1180299519355789423/1180745064876605500/Screenshot_20231023_090805.png?ex=657e8988&is=656c1488&hm=c7a2678f3c7a654726dca9c9d81fea190325263e722d71ebb59e635203aea3b7&",
     "https://cdn.discordapp.com/attachments/1180299519355789423/1180745618650562630/Screenshot_20231120_174347.png?ex=657e8a0c&is=656c150c&hm=b5273f278fa9db5b613f980516c3fd028e3ded3d7ba1a1b4bab41ff58276c3c1&",
     "https://cdn.discordapp.com/attachments/1180299519355789423/1185302573247365150/image.png?ex=658f1e0b&is=657ca90b&hm=7a45ae9d80937c32204dfa7c5460143594be4553ae36b0141591bb832c25679d&",
-    "https://cdn.discordapp.com/attachments/1180299519355789423/1193317649157988352/image.png?ex=65ac46aa&is=6599d1aa&hm=33ff187cde3a1a84ac10151284da13a89097448f089d406c3a4106bf5baa98e9&"
+    "https://cdn.discordapp.com/attachments/1180299519355789423/1193317649157988352/image.png?ex=65ac46aa&is=6599d1aa&hm=33ff187cde3a1a84ac10151284da13a89097448f089d406c3a4106bf5baa98e9&",
     )
 
 imagenes_starboard = (
@@ -79,13 +81,39 @@ imagenes_starboard = (
     ("Y guitarra también", "https://cdn.discordapp.com/attachments/1186763825005994036/1310803043188478044/image.png?ex=67468bf7&is=67453a77&hm=66dcdb3746355aedadcd8cd88512a1c4e7febf49e74c0c6be462b3c19dc958d6&"),
     ("Logia potencia mundial", "https://cdn.discordapp.com/attachments/1186763825005994036/1310803936655179807/image.png?ex=67468ccc&is=67453b4c&hm=b33395f53e645008123ae1e91dc135791ce7e0ab909df49b4a90af06aa4c052c&"),
     ("Verdadero macho", "https://cdn.discordapp.com/attachments/1186763825005994036/1310804507432583168/image.png?ex=67468d54&is=67453bd4&hm=1162a2ab75a9872b2cc3e0fd88505b2415b1cddc155499db62eb73cafe8e1245&"),
-    ("Por favor", "https://cdn.discordapp.com/attachments/1186763825005994036/1310817898884759702/image.png?ex=674699cc&is=6745484c&hm=5f316aaa6129c24b0cbc3389dc16efcd551da188166c070717f29e7227f359e3&")
+    ("Por favor", "https://cdn.discordapp.com/attachments/1186763825005994036/1310817898884759702/image.png?ex=674699cc&is=6745484c&hm=5f316aaa6129c24b0cbc3389dc16efcd551da188166c070717f29e7227f359e3&"),
+    ("El poeta", "https://cdn.discordapp.com/attachments/1186763825005994036/1407174824475885741/image.png?ex=68a5252e&is=68a3d3ae&hm=f96232481a947e3025eda743da596eccfa64d7b0ffb89e6df0ea894b7d9918b4&"),
+    ("¿Que cosa?", "https://cdn.discordapp.com/attachments/1186763825005994036/1407175161479823421/image.png?ex=68a5257e&is=68a3d3fe&hm=43ce4424f534db4151f643cc4a2471c65312979a6008b44af26039a1c70f0a5c&"),
+    ("Melvin Dama", "https://cdn.discordapp.com/attachments/1186763825005994036/1407175621938909366/image.png?ex=68a525ec&is=68a3d46c&hm=20a3eb0a4382d5b0fad836fb8f6731ceeea407949f100701dee838dd3e1ac731&"),
+    ("Envío express", "https://cdn.discordapp.com/attachments/1186763825005994036/1407176769416466474/image.png?ex=68a526fd&is=68a3d57d&hm=8947c0e561cc476c78a0f20cf748f5feb7b5fafcbcfa739488bfc50201116d1b&"),
+    ("Ups", "https://cdn.discordapp.com/attachments/1186763825005994036/1407177187718860891/image.png?ex=68a52761&is=68a3d5e1&hm=f9f0e094ce30d9cd943b21db10a675b5cada542d38b015daf50aa68a95581df4&"),
+    ("Tiempos de escasez", "https://cdn.discordapp.com/attachments/1186763825005994036/1407177881314005092/image.png?ex=68a52807&is=68a3d687&hm=c51c4c58afb2e28dfd9873684cdaffec0cc717dd5a11439d54b44ac822d15d83&"),
+    ("Decencia", "https://cdn.discordapp.com/attachments/1186763825005994036/1407178253046911007/image.png?ex=68a5285f&is=68a3d6df&hm=5fab6f839f2e9a3580662d8dcb761a2cac2f81de4206c7f44a775eeb3ea32f16&"),
+    ("Ta dificil", "https://cdn.discordapp.com/attachments/1186763825005994036/1407178724163584122/image.png?ex=68a528cf&is=68a3d74f&hm=22b501086df96588bf3b7c88cbab0bd7eba1f85424c74728ec5b7827d9eb07b1&"),
+    ("Mick doppelganger", "https://cdn.discordapp.com/attachments/1186763825005994036/1407178921174106122/image.png?ex=68a528fe&is=68a3d77e&hm=6e43aa4a0c640cc79ad0e811c37ed018ea9c96431ac365fe1008718df8b12f6d&"),
+    ("Feel the Melvin", "https://cdn.discordapp.com/attachments/1186763825005994036/1407179757174657064/image.png?ex=68a529c6&is=68a3d846&hm=68aad4475110a7d8b473ec55ae674d6a03e62f5f7d57232f74f8970e125862dc&"),
+    ("Recuerdos de vietnam", "https://cdn.discordapp.com/attachments/1186763825005994036/1407180176764309597/image.png?ex=68a52a2a&is=68a3d8aa&hm=c0a900d53e57fee1eb024110bc1883f01ad58ff6751a627df1dc2ead5f160aeb&"),
+    ("Me regala un Melvin, por favor", "https://cdn.discordapp.com/attachments/1186763825005994036/1407180417890648145/image.png?ex=68a52a63&is=68a3d8e3&hm=337dde9a13542e40a4a3a54f524b78824434b2d8df938c7ecdf36c4e2c8c3492&"),
+    ("11", "https://cdn.discordapp.com/attachments/1186763825005994036/1407180713022853130/image.png?ex=68a52aaa&is=68a3d92a&hm=01cc7f443340ce4ae4e095dd1728cb4c888905e49f405b2e7061eee4c1aa5514&"),
+    ("Cada perro con su hueso", "https://cdn.discordapp.com/attachments/1186763825005994036/1407181505251508295/image.png?ex=68a52b67&is=68a3d9e7&hm=1b207d9e0fa25bdec9a21bb89dee297656535eccbeae7330dac3c21f2b98b07f&"),
+    ("El otro Kitt", "https://cdn.discordapp.com/attachments/1186763825005994036/1407181825654128760/image.png?ex=68a52bb3&is=68a3da33&hm=c06ed292ed064796612f4a3451e03ef38b27d2aa0f7175816ec8b93ede1c5c6f&"),
+    ("Se inicia el cierre de piernas", "https://cdn.discordapp.com/attachments/1186763825005994036/1407182824355794974/image.png?ex=68a52ca1&is=68a3db21&hm=bda7dbe281bf17805d8104f04bd961441c41ad0d339223e1a019df0deddcc7c3&"),
+    ("A ver??", "https://cdn.discordapp.com/attachments/1186763825005994036/1407183240367968276/image.png?ex=68a52d04&is=68a3db84&hm=15ca0606da53ca9a526e6bea0cf3701498615f7a07df6919bc25edcf8d06c057&"),
+    ("Fuck technology", "https://cdn.discordapp.com/attachments/1186763825005994036/1407183499839934475/image.png?ex=68a52d42&is=68a3dbc2&hm=eead76cb40f7883e81e94847f38073f046bc49b2399a4ade5bd67a30456de1fb&"),
+    ("Efecto man||u||ela", "https://cdn.discordapp.com/attachments/1186763825005994036/1407183869337272472/image.png?ex=68a52d9a&is=68a3dc1a&hm=c8ef4cd6cab8dfe72e75293fca9c7cc7f6fc9b3ad37c1fb65ce81fce055926a9&"),
+    ("Último deseo", "https://cdn.discordapp.com/attachments/1186763825005994036/1407184563398119485/image.png?ex=68a52e40&is=68a3dcc0&hm=29301e8417b5485567fd3e2390c326dca996dc6af90831b7afe608090c2c72b6&"),
+    ("Boris referencia?!?!?!", "https://cdn.discordapp.com/attachments/1186763825005994036/1407184897180831834/image.png?ex=68a52e8f&is=68a3dd0f&hm=1236bfb0bda84df463c36606bc7998442f3e28e5f06e7d1080d93aa485b87970&"),
+    ("Pero corre el Angry Birds o no??", "https://cdn.discordapp.com/attachments/1186763825005994036/1407185529568759990/image.png?ex=68a52f26&is=68a3dda6&hm=cc0c1c5ca0b977f5a87dd11c19ca8303dfda7833713cb996cc0c1db4568da71a&"),
+    ("Defensa como el pico", "https://cdn.discordapp.com/attachments/1186763825005994036/1407185821068431490/image.png?ex=68a52f6b&is=68a3ddeb&hm=b4c8de590a242fd53e153aa94ec1513ee350bc8346a9bd3425193fa2fffbcc78&"),
+    ("Cobran por ese servicio?", "https://cdn.discordapp.com/attachments/1186763825005994036/1407186020952313886/image.png?ex=68a52f9b&is=68a3de1b&hm=9cb6af6673241c526d37b6fbf6777f3968a2a8988267a4ba3b5157078dff5d07&"),
+    ("Yo igual creo", "https://cdn.discordapp.com/attachments/1186763825005994036/1407186596557623306/image.png?ex=68a53024&is=68a3dea4&hm=a29270d151155b5795eeced2b93a2443caa75704ba3a7d1428e0ccc4975abfe2&"),
+    ("°O°", "https://cdn.discordapp.com/attachments/1186763825005994036/1407186973470228480/image.png?ex=68a5307e&is=68a3defe&hm=909fb3272decb171fc5aceddeeabd2932c85b54900eb0ab265351ad1a5306d7f&"),
     )
 
 answers = (
     "Hay una cosa que se llama Google, demás que sabe",
     "compita no ve que estoy tratando de tomarme mi MelvinCola, vaya a webear a otro lado",
-    "jaja sí, oie se me está acabando la batería, hablamos la próxima semana?",
+    "jaja sí, oie se me está acabando la batería, lo dejamos para la próxima semana?",
     "loco soy un roboc, que querí que te diga ???",
     "honestamente mimportaunpico :cursedwhyme:",
     "Me gustaría atenderte pero veo que tu carnet está vencido, dirigete al edificio de la SDL https://discord.com/channels/1020776041024864350/1154128025013715085 y vuelve otro día",
@@ -95,17 +123,17 @@ answers = (
     "mmm no, y tampoco fui yo el que quemó esa casa, a mi no me engañan :smiling_imp:",
     "‎",
     "bruh",
-    "Después de leer tu pregunta voy a tener que pasarme por https://discord.com/channels/1020776041024864350/1088598726790094879 un rato...",
+    "Gracias a ti voy a tener que pasarme por https://discord.com/channels/1020776041024864350/1088598726790094879 un rato...",
     "se nota que teni harto tiempo libre oye",
     "Da lo miiismo weon! da lo mismo!",
     "y dale con que las gallinas mean",
-    "Te respondería pero no me es interesante pregunta",
+    "Te respondería pero me da pajita hablarte",
     "hazle caso a tu :heart:. digan lo que digan los demás",
     "No sé wn. sólo soy un bot, y no me pagan lo suficiente para hacer estas cosas.",
     "no entendí bien la pregunta, ¿los policias sabían que asuntos internos les tendia una trampa?",
     "Hoy no se responde, mañana sí",
     "Sí, pero no, y a la vez tampoco",
-    "No te puedo decir que si, ni que no, si no que todo lo contrario",
+    "No te puedo decir que sí, ni que no, si no que todo lo contrario",
     "Te responderé Soon ™️",
     "Como voy a saber aweonao, soy un roboc",
     "Si me dieran sinko peso por cada mensaje estúpido que leo, me harías millonario",
@@ -113,7 +141,10 @@ answers = (
     "Sí.",
     "oie y si le vas a preguntar a otra persona mejor",
     "La comunicación es la solución para muchos problemas, practicala... pero con otra persona por favor",
-    "No responderé preguntas hasta que mi abogado Oso esté presente"
+    "No responderé preguntas hasta que mi abogado Oso esté presente",
+    "Lo que me dices es muy interesante. Lamentablemente los ingleses podrían atacar en cualquier momento! Ya tienes algunas murallas, pero deberías completarlas tan pronto como tengas suficiente piedra.",
+    "(...) Me voy a la Chimba mejor",
+    "Esto es muy deceptionante tanto que no te voy a responder",
 )
 
 helpme_text = """"Comandos informativos:

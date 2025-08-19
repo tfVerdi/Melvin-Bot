@@ -39,7 +39,8 @@ async def channel_allowed(ctx):
 async def on_ready():
     logger.info(f"User: {client.user}; User ID: {client.user.id}")
     print("MelvinBot is LIVE ON AIR!")
-    await client.get_channel(logia_chat_general_id).send("VIVO")
+    if media.getRandomInt(10) == 1:
+        await client.get_channel(logia_chat_general_id).send("VIVO")
 
 # ----------------AUDIT LOGS-------------------
 
