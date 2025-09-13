@@ -61,7 +61,7 @@ async def on_message_edit(before, after):
         modified_embed.set_author(name=before.author.name, icon_url=before.author.avatar.url)
         await client.get_channel(auditlog_channel_id).send(embed=modified_embed)
 
-def handle_attachments(message, deleted_embed) -> list:
+def handle_attachments(message, deleted_embed) -> tuple[str, list[str]]:
     length_attachments = len(message.attachments)
     new_attachments = []
     match length_attachments:
@@ -94,7 +94,7 @@ async def on_message_delete(message):
 @client.command()
 @commands.check(is_verdi)
 async def die(ctx):
-    await client.get_channel(logia_mbot_staff_channel_id).send(f'Muelto :c ||MelvinBot estuvo funcionando por {int((time.time()-startTime)/60)} minutos.||')
+    await client.get_channel(logia_mbot_staff_channel_id).send(f'TAN MATANDO A UN WEÓN (a mi) ;(\n||MelvinBot estuvo funcionando por {int((time.time()-startTime)/60)} minutos.||')
     print("Bot stopped by DIE")
     sys.exit()
 @die.error
@@ -105,7 +105,7 @@ async def die_error(ctx, error):
 @client.command()
 @commands.check(channel_allowed)
 async def report(ctx):
-    await ctx.send(f'MelvinBot ready for duty!')
+    await ctx.send(f'MelvinBot ready for duty!\nLast updated on: 13/09/2025')
 
     #
     # Debug statement for information :) ↓
@@ -204,20 +204,20 @@ async def erronea(ctx):
 @client.command()
 @commands.check(channel_allowed)
 async def durisimo(ctx):
-    random_pic = media.getRandom(media.imagenes_durisimas)
+    random_pic = media.imagenes_durisimas.get_random()
     await ctx.send(random_pic)
     
 @client.command()
 @commands.check(channel_allowed)
 async def starboard(ctx):
-    starboard_tuple = media.getRandom(media.imagenes_starboard)
+    starboard_tuple = media.imagenes_starboard.get_random()
     await ctx.send(f'> {starboard_tuple[0]}')
     await ctx.send(starboard_tuple[1])
     
 @client.command()
 @commands.check(channel_allowed)
 async def oiemelvin(ctx):
-    random_answer = media.getRandom(media.answers)
+    random_answer = media.answers.get_random()
     await ctx.send(random_answer)
 
 @client.command()
@@ -328,6 +328,9 @@ async def mimir(ctx, member: discord.Member, *, time="1h", reason="un motivo sin
             rtime_type = "segundos"
             rtime_quantity = int(time[:-1])
             rtime_quantity_sec = rtime_quantity
+        case _:
+            await ctx.send(f"Tienes que poner una cantidad de tiempo en el siguiente formato:\n\t12h/1d/30m/15s")
+            return
     await ctx.send(f"**{member}** se va a mimir por {rtime_quantity} {rtime_type} zZzZZz")
 
     embed = discord.Embed(title=f'{ctx.author.name} mandó a mimir a {member}.', color=discord.colour.Colour.from_rgb(200,0,0))
